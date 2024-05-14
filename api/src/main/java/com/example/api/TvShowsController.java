@@ -31,7 +31,7 @@ public class TvShowsController {
 
     // READ
 
-    @GetMapping
+    @GetMapping("/tvShows")
     public ResponseEntity<List<TvShow>> getTvShows(@RequestParam(required = false) String tvShowName, @RequestParam(defaultValue = "100") int limit) {
         if (tvShowName != null && !tvShowName.isEmpty()) {
             return ResponseEntity.status(HttpStatus.OK).body(tvShowsService.getTvShowByName(tvShowName, limit));
