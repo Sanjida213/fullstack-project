@@ -9,11 +9,10 @@ public class TvShow {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
-
-    private String tvShow;
-    private String genre;
-    private String yearReleased;
-    private int Rating;
+    private String tvShowName;
+    private String tvShowUrl;
+    private String genreType;
+    private int rating;
 
     public long getId() {
         return id;
@@ -23,46 +22,46 @@ public class TvShow {
         this.id = id;
     }
 
-    public String getGenre() {
-        return genre;
+    public String getTvShowName() {
+        return tvShowName;
     }
 
-    public void setGenre(String genre) {
-        this.genre = genre;
+    public void setTvShowName(String tvShowName) {
+        this.tvShowName = tvShowName;
     }
 
-    public String getTvShow() {
-        return tvShow;
+    public String getTvShowUrl() {
+        return tvShowUrl;
     }
 
-    public void setTvShow(String tvShow) {
-        this.tvShow = tvShow;
+    public void setTvShowUrl(String tvShowUrl) {
+        this.tvShowUrl = tvShowUrl;
     }
 
-    public String getYearReleased() {
-        return yearReleased;
+    public String getGenreType() {
+        return genreType;
     }
 
-    public void setYearReleased(String yearReleased) {
-        this.yearReleased = yearReleased;
+    public void setGenreType(String genreType) {
+        this.genreType = genreType;
     }
 
     public int getRating() {
-        return Rating;
+        return rating;
     }
 
     public void setRating(int rating) {
-        Rating = rating;
+        this.rating = rating;
     }
 
     @Override
     public String toString() {
         return "TvShow{" +
                 "id=" + id +
-                ", tvShow='" + tvShow + '\'' +
-                ", genre='" + genre + '\'' +
-                ", yearReleased='" + yearReleased + '\'' +
-                ", Rating=" + Rating +
+                ", tvShowName='" + tvShowName + '\'' +
+                ", tvShowUrl='" + tvShowUrl + '\'' +
+                ", genreType='" + genreType + '\'' +
+                ", rating=" + rating +
                 '}';
     }
 }
