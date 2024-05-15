@@ -1,18 +1,17 @@
 package com.example.api.models;
 
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
 
+@Entity
+@Table(name = "tvshows")
 public class TvShow {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
-    private String tvShowName;
-    private String tvShowUrl;
-    private String genreType;
-    private int rating;
+    private String title;
+    private String year_released;
+    private long rating;
 
     public long getId() {
         return id;
@@ -22,31 +21,23 @@ public class TvShow {
         this.id = id;
     }
 
-    public String getTvShowName() {
-        return tvShowName;
+    public String getTitle() {
+        return title;
     }
 
-    public void setTvShowName(String tvShowName) {
-        this.tvShowName = tvShowName;
+    public void setTitle(String title) {
+        this.title = title;
     }
 
-    public String getTvShowUrl() {
-        return tvShowUrl;
+    public String getYear_released() {
+        return year_released;
     }
 
-    public void setTvShowUrl(String tvShowUrl) {
-        this.tvShowUrl = tvShowUrl;
+    public void setYear_released(String year_released) {
+        this.year_released = year_released;
     }
 
-    public String getGenreType() {
-        return genreType;
-    }
-
-    public void setGenreType(String genreType) {
-        this.genreType = genreType;
-    }
-
-    public int getRating() {
+    public long getRating() {
         return rating;
     }
 
@@ -58,9 +49,8 @@ public class TvShow {
     public String toString() {
         return "TvShow{" +
                 "id=" + id +
-                ", tvShowName='" + tvShowName + '\'' +
-                ", tvShowUrl='" + tvShowUrl + '\'' +
-                ", genreType='" + genreType + '\'' +
+                ", tvShowName='" + title + '\'' +
+                ", year_released='" + year_released + '\'' +
                 ", rating=" + rating +
                 '}';
     }

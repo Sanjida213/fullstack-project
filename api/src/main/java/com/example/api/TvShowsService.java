@@ -43,8 +43,8 @@ public class TvShowsService {
         return tvShowsRepository.getDistinctIds();
     }
 
-    public List<TvShow> getTvShowByName(String tvShowName, int limit) {
-        List<TvShow> tvShows = tvShowsRepository.getAllByTvShowByName(tvShowName);
+    public List<TvShow> getTvShowByTitle(String title, int limit) {
+        List<TvShow> tvShows = tvShowsRepository.getAllByTitle(title);
 
         return tvShows
                 .stream()

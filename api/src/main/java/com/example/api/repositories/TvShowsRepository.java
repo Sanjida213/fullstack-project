@@ -8,16 +8,14 @@ import java.util.List;
 
 public interface TvShowsRepository extends JpaRepository<TvShow, Long> {
 
-    // READ
-    List<TvShow> getAllByTvShowByName(String tvShowName);
+    List<TvShow> getAllByTitle(String title);
 
-    @Query(value="SELECT DISTINCT id FROM tvShow ", nativeQuery = true)
+    @Query(value="SELECT DISTINCT id FROM tvShows ", nativeQuery = true)
     List<Long> getDistinctIds();
 
-    @Query(value="SELECT * FROM greeting ORDER BY RAND() LIMIT 1", nativeQuery = true)
+    @Query(value="SELECT * FROM tvShows ORDER BY RAND() LIMIT 1", nativeQuery = true)
     TvShow getRandomTvShow();
 
 
-    // DELETE
     void deleteTvShowById(long id);
 }
