@@ -1,34 +1,36 @@
 .edit-tvShow {
-&__title {
-  margin: 1em auto;
-  display: flex;
-  justify-content: center;
-  padding-top: 4rem;
-}
-
-&__content {
-  margin: auto;
-  width: fit-content;
-  max-width: 500px;
-}
-
-&__buttons {
-  display: flex;
-  justify-content: center;
-}
-
-&__button {
-  margin: 2em 0;
-  display: inline-block;
-  background: #5828c7;
-  border: 1px solid #4f24b2;
-  padding: 0.5em 2em;
-  color: white;
-
-  &--secondary {
-    border: 1px solid #4f24b2;
-    background-color: unset;
-    color: #4f24b2;
+  &__title {
+    margin: 1em auto;
+    display: flex;
+    justify-content: center;
+    padding-top: 4rem;
+    font-size: 2rem;
   }
-}
+
+  &__content {
+    margin: auto;
+    width: 100%; 
+    max-width: 700px; 
+  }
+
+  &__buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  &__button {
+    margin: 2em 0;
+    display: inline-block;
+    background: #71b1ae;
+    border: 2px solid #71b1ae;
+    padding: 0.5em 2em;
+    color: white;
+
+    &--secondary {
+      border: 2px solid #71b1ae;
+      background-color: unset;
+      color: #71b1ae;
+    }
+  }
 }

@@ -12,7 +12,7 @@ const TvShowList = ({ tvShow }: TvShowListProps) => {
     <>
       <div className="tvShow-list">
         {tvShow.map(tvShow => (
-          <Link key={tvShow.id} to={`/tvShow/edit/${tvShow.id}`}>
+          <Link className="custom-link" key={tvShow.id} to={`/tvShow/edit/${tvShow.id}`}>
             <TvShow tvShow={tvShow} />
           </Link>
         ))}

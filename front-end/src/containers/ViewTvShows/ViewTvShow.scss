@@ -1,11 +1,17 @@
 .view-tvShows {
+  display: flex;
+  flex-direction: column; 
+  justify-content: center; 
+  align-items: center; 
+
   &__title {
     margin: 1em auto;
   }
 
-  &__form {
+  &__filtered {
     text-align: center;
     margin: 20px 0;
+    padding-top: 1rem;
   }
 }
 

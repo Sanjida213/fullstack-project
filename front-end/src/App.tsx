@@ -8,7 +8,8 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 function App() {
   return (
-    <Router>
+    <div className="body">
+       <Router>
       <Nav />
       <Routes>
         <Route path="/" element={<Home />} />
@@ -17,6 +18,8 @@ function App() {
         <Route path="/tvShow/edit/:id" element={<EditTvShow />} />
       </Routes>
     </Router>
+    </div>
+   
   );
 }
 
