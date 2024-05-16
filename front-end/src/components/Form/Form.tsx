@@ -32,21 +32,21 @@ const Form = ({ defaultFormState, handleSubmit, formTitle }: FormProps) => {
         <input
           className="form-container__input"
           type="text"
-          placeholder="genre"
-          value={tvShow.genre}
-          onInput={event => handleInput(event, "genre")}
+          placeholder="Year Released"
+          value={tvShow.year_released}
+          onInput={event => handleInput(event, "year_released")}
         />
         <input
           className="form-container__input"
           type="text"
-          placeholder="title"
-          value={tvShow.tvShow}
-          onInput={event => handleInput(event, "tvShow")}
+          placeholder="Title"
+          value={tvShow.title}
+          onInput={event => handleInput(event, "title")}
         />
         <input
           className="form-container__input"
           type="text"
-          placeholder="rating"
+          placeholder="Rating"
           value={tvShow.rating}
           onInput={event => handleInput(event, "rating")}
         />

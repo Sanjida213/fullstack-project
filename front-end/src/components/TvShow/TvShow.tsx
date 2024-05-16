@@ -10,7 +10,7 @@ const TvShow = ({ tvShow: tvShowObject }: TvShowProp) => {
 
   return (
     <div className="tvShow">
-      <h3 className="tvShow__title">Title:{tvShowText}</h3>
+      <h3 className="tvShow__title"> {tvShowText}</h3>
       <p className="tvShow__text">Year Released: {year_released}</p>
       <p className="tvShow__text"> Ratings: {rating}</p>
     </div>

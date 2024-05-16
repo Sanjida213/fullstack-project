@@ -2,7 +2,7 @@ type TvShowType = {
   id: number;
   title: string;
   year_released: string;
-  rating: number;
+  rating: string;
 };
 
 export default TvShowType;

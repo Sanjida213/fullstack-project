@@ -21,11 +21,10 @@ const CreateTvShow = () => {
     }
   };
 
-  const defaultFormState = { id: -1, title: "", year_released: "", rating: 0 };
+  const defaultFormState = { id: -1, title: "", year_released: "", rating: "" };
 
   return (
     <section className="create-tvShow">
-      <h2 className="create-tvShow__title">Add a TV Show</h2>
       <Form handleSubmit={handleSubmit} defaultFormState={defaultFormState} formTitle="Add A New TV Show" />
     </section>
   );

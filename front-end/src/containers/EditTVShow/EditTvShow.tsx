@@ -3,8 +3,8 @@ import { useState, useEffect } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import Form from "../../components/Form/Form";
 import TvShow from "../../components/TvShow/TvShow";
-import Spinner from "../../components/Spinner/Spinner";
 import TvShowType from "../../types/TvShowType";
+import Spinner from "../../components/Spinner/Spinner";
 
 const EditTvShow = () => {
   const { id } = useParams();

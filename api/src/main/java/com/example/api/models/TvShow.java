@@ -11,7 +11,7 @@ public class TvShow {
     private long id;
     private String title;
     private String year_released;
-    private long rating;
+    private String rating;
 
     public long getId() {
         return id;
@@ -37,11 +37,11 @@ public class TvShow {
         this.year_released = year_released;
     }
 
-    public long getRating() {
+    public String getRating() {
         return rating;
     }
 
-    public void setRating(int rating) {
+    public void setRating(String rating) {
         this.rating = rating;
     }
 
@@ -49,7 +49,7 @@ public class TvShow {
     public String toString() {
         return "TvShow{" +
                 "id=" + id +
-                ", tvShowName='" + title + '\'' +
+                ", title='" + title + '\'' +
                 ", year_released='" + year_released + '\'' +
                 ", rating=" + rating +
                 '}';
