@@ -4,14 +4,52 @@
   justify-content: center;
   align-items: center;
   padding-top: 1rem;
+  padding: 0.5rem;
 
   .heading {
     margin: 1em auto;
-    font-size: 4rem;
+    font-size: 2rem;
+    
   }
 
   .image {
     max-width: 100%;
     height: auto;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  
+  .home-container {
+    .heading {
+      font-size: 4rem;
+      margin: 1em auto;
+      text-align: center;
+    }
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  
+  .home-container {
+    .heading {
+      font-size: 5rem;
+    }
+  }
+}
+
+@media screen and (min-width: 2560px) {
+  
+  .home-container {
+    .heading {
+      font-size: 10rem;
+      margin: 1em auto;
+      text-align: center;
+    }
+
+    .image {
+      max-width: 100%;
+      height: auto;
+    }
   }
 }

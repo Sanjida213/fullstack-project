@@ -17,13 +17,11 @@ public class TvShowsService {
     @Autowired
     TvShowsRepository tvShowsRepository;
 
-    // CREATE
 
     public void addTvShow(TvShow tvShow) {
         tvShowsRepository.save(tvShow);
     }
 
-    // READ
 
     public TvShow getTvShowById(long id) {
         Optional<TvShow> tvShow = tvShowsRepository.findById(id);
@@ -62,7 +60,6 @@ public class TvShowsService {
 
     }
 
-    // UPDATE
 
     @Modifying
     public void updateTvShow(TvShow newTvShow, long id) {
@@ -75,7 +72,6 @@ public class TvShowsService {
     }
 
 
-    // DELETE
     @Transactional
     public void deleteTvShowById(long id) {
         if (!tvShowsRepository.existsById(id)) {
